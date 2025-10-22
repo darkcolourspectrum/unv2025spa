@@ -1,4 +1,3 @@
-// src/components/CategoryFilter/CategoryFilter.styles.js
 import styled from 'styled-components';
 
 export const FilterContainer = styled.div`

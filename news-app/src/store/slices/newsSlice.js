@@ -1,8 +1,6 @@
-// src/store/slices/newsSlice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { newsAPI } from '../../services/newsAPI';
 
-// Асинхронные действия
 export const fetchNews = createAsyncThunk(
   'news/fetchNews',
   async ({ query = '', category = '', page = 1 }, { rejectWithValue }) => {
@@ -54,11 +52,11 @@ const newsSlice = createSlice({
   reducers: {
     setSearchQuery: (state, action) => {
       state.searchQuery = action.payload;
-      state.currentPage = 1; // Сброс страницы при новом поиске
+      state.currentPage = 1;
     },
     setSelectedCategory: (state, action) => {
       state.selectedCategory = action.payload;
-      state.currentPage = 1; // Сброс страницы при новой категории
+      state.currentPage = 1;
     },
     setCurrentPage: (state, action) => {
       state.currentPage = action.payload;
@@ -72,7 +70,6 @@ const newsSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      // Загрузка новостей
       .addCase(fetchNews.pending, (state) => {
         state.loading = true;
         state.error = null;
@@ -87,7 +84,6 @@ const newsSlice = createSlice({
         state.loading = false;
         state.error = action.payload;
       })
-      // Загрузка отдельной новости
       .addCase(fetchNewsById.pending, (state) => {
         state.loading = true;
         state.error = null;

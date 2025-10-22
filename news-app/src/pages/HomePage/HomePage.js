@@ -1,4 +1,3 @@
-// src/pages/HomePage/HomePage.js
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchNews } from '../../store/slices/newsSlice';

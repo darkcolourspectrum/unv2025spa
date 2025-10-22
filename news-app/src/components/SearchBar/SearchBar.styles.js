@@ -1,4 +1,3 @@
-// src/components/SearchBar/SearchBar.styles.js
 import styled from 'styled-components';
 
 export const SearchContainer = styled.div`

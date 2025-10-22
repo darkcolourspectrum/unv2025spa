@@ -1,4 +1,3 @@
-// src/components/CategoryFilter/CategoryFilter.js
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSelectedCategory, setCurrentPage } from '../../store/slices/newsSlice';

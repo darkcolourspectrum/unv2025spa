@@ -1,4 +1,3 @@
-// src/components/NewsCard/NewsCard.js
 import React, { useState } from 'react';
 import {
   CardLink,

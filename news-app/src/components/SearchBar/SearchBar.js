@@ -1,4 +1,3 @@
-// src/components/SearchBar/SearchBar.js
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSearchQuery, setCurrentPage } from '../../store/slices/newsSlice';

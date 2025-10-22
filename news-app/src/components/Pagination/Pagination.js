@@ -1,4 +1,3 @@
-// src/components/Pagination/Pagination.js
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { setCurrentPage } from '../../store/slices/newsSlice';
@@ -14,19 +13,17 @@ const Pagination = ({ currentPage, totalPages, totalResults }) => {
   const handlePageChange = (page) => {
     if (page >= 1 && page <= totalPages && page !== currentPage) {
       dispatch(setCurrentPage(page));
-      // Прокрутка к началу страницы при смене страницы
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
   const getPageNumbers = () => {
     const pageNumbers = [];
-    const showPages = 5; // Количество отображаемых страниц
+    const showPages = 5; 
     
     let startPage = Math.max(1, currentPage - Math.floor(showPages / 2));
     let endPage = Math.min(totalPages, startPage + showPages - 1);
     
-    // Корректировка если страниц меньше чем showPages
     if (endPage - startPage < showPages - 1) {
       startPage = Math.max(1, endPage - showPages + 1);
     }
