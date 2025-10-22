@@ -11,9 +11,3 @@ export const NewsGrid = styled.div`
     gap: 1.5rem;
   }
 `;
-
-export const LoadingWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0;
-`;

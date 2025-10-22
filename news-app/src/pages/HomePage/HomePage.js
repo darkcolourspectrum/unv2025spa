@@ -6,7 +6,7 @@ import CategoryFilter from '../../components/CategoryFilter/CategoryFilter';
 import NewsCard from '../../components/NewsCard/NewsCard';
 import Pagination from '../../components/Pagination/Pagination';
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
-import { NewsGrid, LoadingWrapper } from './HomePage.styles';
+import { NewsGrid } from './HomePage.styles';
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -29,16 +29,6 @@ const HomePage = () => {
     }));
   }, [dispatch, searchQuery, selectedCategory, currentPage]);
 
-  if (loading && articles.length === 0) {
-    return (
-      <div className="container">
-        <SearchBar />
-        <CategoryFilter />
-        <LoadingSpinner />
-      </div>
-    );
-  }
-
   return (
     <div className="container">
       <SearchBar />
@@ -50,37 +40,35 @@ const HomePage = () => {
         </div>
       )}
 
-      {!loading && articles.length === 0 && !error && (
-        <div className="no-results">
-          <h3>Новости не найдены</h3>
-          <p>
-            Попробуйте изменить поисковый запрос или выбрать другую категорию.
-          </p>
-        </div>
-      )}
-
-      {articles.length > 0 && (
+      {loading ? (
+        <LoadingSpinner />
+      ) : (
         <>
-          <NewsGrid>
-            {articles.map((article) => (
-              <NewsCard key={article.id} article={article} />
-            ))}
-          </NewsGrid>
+          {articles.length === 0 && !error ? (
+            <div className="no-results">
+              <h3>Новости не найдены</h3>
+              <p>
+                Попробуйте изменить поисковый запрос или выбрать другую категорию.
+              </p>
+            </div>
+          ) : (
+            <>
+              <NewsGrid>
+                {articles.map((article) => (
+                  <NewsCard key={article.id} article={article} />
+                ))}
+              </NewsGrid>
 
-          {totalPages > 1 && (
-            <Pagination
-              currentPage={currentPage}
-              totalPages={totalPages}
-              totalResults={totalResults}
-            />
+              {totalPages > 1 && (
+                <Pagination
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  totalResults={totalResults}
+                />
+              )}
+            </>
           )}
         </>
-      )}
-
-      {loading && articles.length > 0 && (
-        <LoadingWrapper>
-          <LoadingSpinner />
-        </LoadingWrapper>
       )}
     </div>
   );
