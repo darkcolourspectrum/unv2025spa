@@ -27,7 +27,7 @@ function App() {
           
           <footer className="app-footer">
             <div className="container">
-              <p>&copy; 2024 News Portal. Educational project.</p>
+              <p>&copy; 2025 News Portal.</p>
             </div>
           </footer>
         </div>
