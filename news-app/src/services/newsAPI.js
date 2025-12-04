@@ -7,7 +7,7 @@ const mockNewsData = [
     content: 'In a groundbreaking development, researchers at the Quantum Institute have successfully demonstrated a 1000-qubit quantum processor that maintains coherence for unprecedented durations. This breakthrough could accelerate the development of practical quantum applications in cryptography, drug discovery, and artificial intelligence.',
     url: 'https://example.com/news/quantum-computing-breakthrough',
     urlToImage: process.env.PUBLIC_URL + '/images/1.jpg',
-    publishedAt: '2024-10-20T10:30:00Z',
+    publishedAt: '2025-10-20T10:30:00Z',
     source: { name: 'Tech Today' },
     category: 'technology',
     author: 'Dr. Sarah Chen'
@@ -19,7 +19,7 @@ const mockNewsData = [
     content: 'The Global Climate Summit concluded with 195 countries signing a comprehensive agreement to reduce carbon emissions by 50% by 2030. The accord includes innovative financing mechanisms for developing nations and establishes a global carbon credit system.',
     url: 'https://example.com/news/climate-summit-agreement',
     urlToImage: process.env.PUBLIC_URL + '/images/2.jpg',
-    publishedAt: '2024-10-19T14:45:00Z',
+    publishedAt: '2025-10-19T14:45:00Z',
     source: { name: 'World News Network' },
     category: 'general',
     author: 'Michael Rodriguez'
@@ -31,7 +31,7 @@ const mockNewsData = [
     content: 'A novel gene therapy developed by BioTech Labs has restored vision in 90% of patients with inherited blindness. The treatment uses CRISPR technology to correct defective genes directly in the retina, offering hope for millions worldwide.',
     url: 'https://example.com/news/gene-therapy-breakthrough',
     urlToImage: process.env.PUBLIC_URL + '/images/3.jpg',
-    publishedAt: '2024-10-18T09:15:00Z',
+    publishedAt: '2025-10-18T09:15:00Z',
     source: { name: 'Medical Journal Today' },
     category: 'health',
     author: 'Dr. Emily Watson'
@@ -43,7 +43,7 @@ const mockNewsData = [
     content: 'SpaceX has successfully launched the Ares-1 mission, carrying advanced equipment and supplies for establishing a permanent research outpost on Mars. The mission represents a crucial step toward human colonization of the Red Planet.',
     url: 'https://example.com/news/spacex-mars-mission',
     urlToImage: process.env.PUBLIC_URL + '/images/4.jpg',
-    publishedAt: '2024-10-17T16:20:00Z',
+    publishedAt: '2025-10-17T16:20:00Z',
     source: { name: 'Space Daily' },
     category: 'science',
     author: 'James Thompson'
@@ -55,7 +55,7 @@ const mockNewsData = [
     content: 'Artificial intelligence startup NeuralNext has raised $500 million in Series C funding, valuing the company at $5 billion. The funding will accelerate development of their revolutionary AI model that promises human-level reasoning capabilities.',
     url: 'https://example.com/news/ai-startup-funding',
     urlToImage: process.env.PUBLIC_URL + '/images/5.jpg',
-    publishedAt: '2024-10-16T11:30:00Z',
+    publishedAt: '2025-10-16T11:30:00Z',
     source: { name: 'Business Wire' },
     category: 'business',
     author: 'Lisa Park'
@@ -67,7 +67,7 @@ const mockNewsData = [
     content: 'The Paris 2024 Olympic Games have officially become the first carbon-neutral Olympics in history. Through renewable energy, sustainable materials, and carbon offset programs, organizers have set a new standard for mega-events.',
     url: 'https://example.com/news/olympics-sustainability',
     urlToImage: process.env.PUBLIC_URL + '/images/6.jpg',
-    publishedAt: '2024-10-15T13:45:00Z',
+    publishedAt: '2025-10-15T13:45:00Z',
     source: { name: 'Sports Global' },
     category: 'sports',
     author: 'Carlos Mendez'
@@ -79,7 +79,7 @@ const mockNewsData = [
     content: 'Leading Hollywood studios are integrating AI technology into film production, from script analysis to advanced visual effects. The technology promises to reduce production costs while enhancing creative possibilities.',
     url: 'https://example.com/news/hollywood-ai-adoption',
     urlToImage: process.env.PUBLIC_URL + '/images/7.jpg',
-    publishedAt: '2024-10-14T08:20:00Z',
+    publishedAt: '2025-10-14T08:20:00Z',
     source: { name: 'Entertainment Weekly' },
     category: 'entertainment',
     author: 'Rachel Green'
@@ -91,7 +91,7 @@ const mockNewsData = [
     content: 'According to the International Energy Agency, renewable sources have reached a historic milestone, providing 60% of global electricity. This achievement accelerates the transition toward sustainable energy independence.',
     url: 'https://example.com/news/renewable-energy-milestone',
     urlToImage: process.env.PUBLIC_URL + '/images/8.jpg',
-    publishedAt: '2024-10-13T15:10:00Z',
+    publishedAt: '2025-10-13T15:10:00Z',
     source: { name: 'Energy Today' },
     category: 'science',
     author: 'David Kim'
