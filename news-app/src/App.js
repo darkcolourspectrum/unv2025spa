@@ -13,8 +13,8 @@ function App() {
         <div className="App">
           <header className="app-header">
             <div className="container">
-              <h1 className="app-title">News Portal</h1>
-              <p className="app-subtitle">Stay informed with the latest news</p>
+              <h1 className="app-title">Кузьмин News</h1>
+              <p className="app-subtitle">Оставайтесь в курсе последних новостей</p>
             </div>
           </header>
           

@@ -2,6 +2,7 @@
   "name": "news-spa-app",
   "version": "1.0.0",
   "description": "Single Page Application для просмотра новостей с React и Redux",
+  "homepage": "https://darkcolourspectrum.github.io/unv2025spa",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
@@ -20,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -49,5 +52,8 @@
     "frontend"
   ],
   "author": "Студент",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }

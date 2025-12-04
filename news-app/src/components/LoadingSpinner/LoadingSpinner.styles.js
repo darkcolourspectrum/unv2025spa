@@ -1,4 +1,3 @@
-// src/components/LoadingSpinner/LoadingSpinner.styles.js
 import styled, { keyframes } from 'styled-components';
 
 const spin = keyframes`
