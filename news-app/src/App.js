@@ -9,7 +9,7 @@ import './App.css';
 function App() {
   return (
     <Provider store={store}>
-      <Router>
+      <Router basename="/unv2025spa">
         <div className="App">
           <header className="app-header">
             <div className="container">
